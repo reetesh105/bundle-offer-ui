@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BOGO Offer</title>
+  <link rel="stylesheet" href="style/styles.css">
+</head>
+<body>
+  <div class="offer-box">
+    <h2>YAY! It's BOGO</h2>
+
+    <div class="option selected" onclick="selectOption(1)">
+      <input type="radio" name="unit" checked>
+      <label>
+        <div class="label-header">
+          <span>1 Unit</span>
+          <span class="badge">10% Off</span>
+        </div>
+        <div class="price">$10.00 USD <span class="strikethrough">$24.00 USD</span></div>
+        <div class="note">Standard Price</div>
+      </label>
+    </div>
+
+    <div class="option popular" onclick="selectOption(2)">
+      <input type="radio" name="unit">
+      <label>
+        <div class="label-header">
+          <span>2 Unit</span>
+          <span class="badge">20% Off</span>
+          <span class="tag">MOST POPULAR</span>
+        </div>
+        <div class="price">$18.00 USD <span class="strikethrough">$24.00 USD</span></div>
+        <div class="selectors">
+          <div>
+            <label>#1</label>
+            <select><option>S</option><option>M</option><option>L</option></select>
+            <select><option>Black</option><option>Red</option><option>Blue</option></select>
+          </div>
+          <div>
+            <label>#2</label>
+            <select><option>S</option><option>M</option><option>L</option></select>
+            <select><option>Colour</option></select>
+          </div>
+        </div>
+      </label>
+    </div>
+
+    <div class="option" onclick="selectOption(3)">
+      <input type="radio" name="unit">
+      <label>
+        <div class="label-header">
+          <span>3 Unit</span>
+          <span class="badge">30% Off</span>
+        </div>
+        <div class="price">$24.00 USD</div>
+      </label>
+    </div>
+
+    <div class="footer">
+      <div class="delivery">Free Delivery</div>
+      <div class="total">Total : $18.00 USD</div>
+    </div>
+
+    <button class="add-to-cart">+ Add to Cart</button>
+    <div class="powered">@ Created  by Reetesh</div>
+  </div>
+
+  <script src="script/app.js"></script>
+</body>
+</html>
